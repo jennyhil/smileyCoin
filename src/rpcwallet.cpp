@@ -42,7 +42,7 @@ throw runtime_error(
 
 if(rand()%2==1)
 return "heads"
-else return "tails")
+else return "tails"
 }
 
 void EnsureWalletIsUnlocked()
