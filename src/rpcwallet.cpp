@@ -33,6 +33,17 @@ std::string HelpRequiringPassphrase()
         ? "\nRequires wallet passphrase to be set with walletpassphrase call."
         : "";
 }
+string flipCoin(const Array& params, bool fHelp){
+	if(fHelp || params.size()!=0)
+throw runtime_error(
+"flipCoin"
+"takes no argument"
+);
+
+if(rand()%2==1)
+return "heads"
+else return "tails")
+}
 
 void EnsureWalletIsUnlocked()
 {
