@@ -1642,7 +1642,7 @@ Value verifymessage(const Array& params, bool fHelp)
     return (pubkey.GetID() == keyID);
 }
 
-string flipCoin(const Array& params, bool fHelp){
+Value flipCoin(const Array& params, bool fHelp){
 	if(fHelp || params.size()!=0)
 throw runtime_error(
 "flipCoin"
@@ -1650,8 +1650,8 @@ throw runtime_error(
 );
 
 if(rand()%2==1)
-return "heads"
-else return "tails"
+return "heads";
+else return "tails";
 }
 
 
