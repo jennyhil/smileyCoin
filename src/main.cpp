@@ -5,7 +5,7 @@
 // junk comment line 3
 // junk comment line 4
 // junk comment line 5
-
+// junk comment line 6
 #include "main.h"
 
 #include "addrman.h"
